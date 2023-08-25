@@ -1,4 +1,4 @@
-package net.proselyte.jwtappdemo.rest;
+package net.proselyte.jwtappdemo.controllers;
 
 import net.proselyte.jwtappdemo.dto.UserDto;
 import net.proselyte.jwtappdemo.model.User;

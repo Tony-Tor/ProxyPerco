@@ -1,4 +1,4 @@
-package net.proselyte.jwtappdemo.rest;
+package net.proselyte.jwtappdemo.controllers;
 
 import net.proselyte.jwtappdemo.dto.AuthenticationRequestDto;
 import net.proselyte.jwtappdemo.model.User;
@@ -57,7 +57,6 @@ public class AuthenticationRestControllerV1 {
             String token = jwtTokenProvider.createToken(username, user.getRoles());
 
             Map<Object, Object> response = new HashMap<>();
-            response.put("username", username);
             response.put("token", token);
 
             return ResponseEntity.ok(response);
